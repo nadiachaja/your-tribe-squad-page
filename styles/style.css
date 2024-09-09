@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 body {
@@ -18,16 +18,20 @@ main {
 }
 
 figure {
-  height: 30vh;
-  width: 30vh;
+  min-height: 30vh;
+  width: 45%;
   border-radius: 10px;
+  background-color: white;
+  margin: 1rem;
 }
 
 .left, .middle, .right {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   height: 100vh;
   width: 33%;
+  overflow: scroll;
 }
 
 .left {
