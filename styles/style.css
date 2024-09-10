@@ -26,24 +26,24 @@ h1 {
 }
 
 figure {
-  min-height: 100px;
+  /* min-height: 100px;
   height: 10vw;
   min-width: 100px;
-  width: 10vw;
-  object-fit: cover;
+  width: 10vw; */
+  /* object-fit: cover; */
 }
 
 img {
   min-height: 100px;
-  height: 10vw;
+  height: 12vw;
   min-width: 100px;
-  width: 10vw;
+  width: 12vw;
   max-width: 100%;
   border-radius: 20px;
   object-fit: cover;
 }
 
-.left, .middle, .right {
+.middle, .right {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -58,7 +58,36 @@ img {
 }
 
 .left {
+  min-height: 100vh;
+  width: auto;
+  overflow-y: scroll;
+  max-width: 33%;
+
   background-color: #c7a4d3;
+
+}
+
+figure {
+  grid-row: span 2;
+}
+
+/* figure:nth-child(2) {
+  grid-row: 2/3;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10vw, 1fr));
+  grid-template-rows: repeat(auto-fill, 6vw);
+  gap: .5em;
+  padding: .5em;
+}
+
+.filler {
+  grid-column: 1 / 2;
+  grid-row: 1 / 1;
+  /* background-color: white; */
+  border-radius: 20px;
 }
 
 .middle {
@@ -67,6 +96,7 @@ img {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  flex-shrink: 2;
 }
 
 .right {
@@ -76,3 +106,13 @@ img {
 section::-webkit-scrollbar {
   display: none;
 }
+
+/* @keyframes scroll {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(calc(-10vw * 7))}
+}
+
+.left .container{
+  animation: scroll 5s linear infinite;
+  height: calc(10vw * 7);
+} */
