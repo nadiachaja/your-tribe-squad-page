@@ -6,23 +6,31 @@
 
 body {
   min-height: 100vh;
+  width: 100vw;
+  /* max-width: 1600px; */
   font-family: sans-serif;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
 main {
-  margin: auto;
   display: flex;
   flex-direction: row;
 
+  margin: auto;
   height: 100%;
   max-height: 100vh;
+  width: 1200px;
   max-width: 1600px;
 }
 
 h1 {
   font-size: 64px;
+  font-family: "Dosis", sans-serif;
+}
+
+h2 {
+  font-family: "Dosis", sans-serif;
 }
 
 figure {
@@ -49,22 +57,26 @@ img {
   align-items: center;
   align-content: flex-start;
   justify-content: center;
-  gap: 4px;
+  /* gap: 4px; */
 
   min-height: 100vh;
-  width: 33%;
+  max-width: 30%;
   overflow-y: scroll;
-  max-width: 25vw;
+  /* max-width: 25vw; */
+}
+
+.middle header{
+  padding: 2rem;
 }
 
 .left {
   min-height: 100vh;
-  width: auto;
+  /* width: auto; */
   overflow-y: scroll;
-  max-width: 33%;
+  max-width: 35%;
 
-  background-color: #c7a4d3;
-
+  /* background-color: #c7a4d3; */
+  background-color:rgb(27, 27, 27);
 }
 
 figure {
@@ -91,7 +103,8 @@ figure {
 }
 
 .middle {
-  background-color: #b2d3f6;
+  /* background-color: #b2d3f6; */
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -100,7 +113,15 @@ figure {
 }
 
 .right {
-  background-color: #ffcfe0;
+  /* background-color: #ffcfe0; */
+  background-color:rgb(27, 27, 27);
+  max-width: 40%;
+
+  .filler {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    border-radius: 20px;
+  }
 }
 
 section::-webkit-scrollbar {
