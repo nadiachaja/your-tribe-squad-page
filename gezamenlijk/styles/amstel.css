@@ -1,0 +1,81 @@
+main{
+    
+    width: 100vw;
+    margin: auto;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin: auto;
+    align-items: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 32px;
+}
+
+.middle{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+
+
+h1{
+    font-family: "Madimi One", sans-serif;
+    font-size: 32px;
+}
+
+
+h2{
+font-family:"Madimi One", sans-serif;
+font-size: 24px ;
+}
+
+
+h3{
+    font-family: "Madimi One", sans-serif;
+    font-size: 18px;
+}
+
+h4{
+    font-family: "Madimi One", sans-serif;
+    font-size: 15,5px;
+}
+
+
+p{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 15px;
+max-width: 40em;
+}
+
+th{
+    background-color: rgb(193, 193, 193);
+    }
+    
+    td{
+        background-color: rgb(208, 206, 206); 
+    }
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
