@@ -96,6 +96,12 @@ p {
 }
 
 
+th,td {
+    text-align: center;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
 
 /*kleur van tabel th -> dagen en td -> tijden*/
 th {
@@ -106,6 +112,19 @@ th {
 td {
     background-color: rgb(208, 206, 206);
 }
+
+table:hover {background-color:rgba(166, 117, 245, 1);}
+
+/*tabel th en td samenvoegen*/
+/* tr:has(:hover) th,
+tr:has(:hover) td {
+    background-color:rgba(166, 117, 245, 1);
+} */
+
+tr:has(:hover) :is(th, td) {
+    background-color:rgba(166, 117, 245, 1);
+}
+
 
 
 /*plaatje en tabel naast elkaar*/
@@ -119,11 +138,11 @@ td {
 
 }
 
+
 /*het witte vlak waar de tekst, plaatje en tabel in staan*/
 section {
     background-color: rgb(251, 251, 251);
     border-radius: 20px;
     margin-bottom: 2em;
     padding: 1em;
-
 }
