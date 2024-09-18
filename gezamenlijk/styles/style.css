@@ -56,6 +56,10 @@ h2 {
   font-size: 8vw;
 }
 
+h2:hover {
+  text-decoration: underline;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -74,17 +78,6 @@ p {
   font-size: 14px;
   max-width: 80vw;
 }
-
-/* 
-img {
-  min-height: 10vw;
-  height: 12vw;
-  min-width: 120px;
-  width: 12vw;
-  max-width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-} */
 
 /* MAIN CONTAINERS */
 .text-container {
@@ -125,8 +118,13 @@ img {
   padding: .5em;
   justify-items: center;
   overflow-x: scroll;
-}
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  }
 
+.grid-container::-webkit-scrollbar {
+display: none;
+}
 .header-flex {
   display: flex;
   align-items: center;
@@ -143,7 +141,9 @@ section::-webkit-scrollbar {
   display: none;
 }
 
-.filler1, .filler2, .filler3 {
+.filler1,
+.filler2,
+.filler3 {
   display: none;
 }
 
@@ -153,11 +153,14 @@ section::-webkit-scrollbar {
   }
 
   h2 {
-    font-size: max(36px, 3vw);;
+    font-size: max(36px, 3vw);
+    ;
     max-width: 100%;
   }
 
   p {
+    font-size: 16px;
+    color: var(--secondary-color);
     max-width: 24em;
   }
 
@@ -206,6 +209,7 @@ section::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    gap: 2rem;
   }
 
   figure {
@@ -224,7 +228,9 @@ section::-webkit-scrollbar {
     display: flex;
   }
 
-  .filler1, .filler2, .filler3 {
+  .filler1,
+  .filler2,
+  .filler3 {
     display: block;
   }
 
