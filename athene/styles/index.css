@@ -2,6 +2,9 @@
     box-sizing: border-box;
     display: flex;
 }
+head{
+  display: none;
+}
 body{
     display:grid;
     color: white;
@@ -16,19 +19,27 @@ body{
     "header scroll4";
 
 }
-
-/*Zorg ervoor dat de marquees niet voor de header gaan op een smal scherm*/
+header{
+  flex-direction:column;
+}
+/*Zorg ervoor dat de marquees niet voor de header gaan*/
 section{
     overflow:hidden;
     flex-direction: row;
+    text-align: bottom;
 }
 
+figcaption{
+  position:absolute; 
+}
 img{
-    width: 15vw;
-    height: 15vw;
+    width: 25vh;
+    height: 25vh;
     object-fit: cover;
+    grid-area: img;
 }
 /*Positionering van de scrollers*/
+@media (min-width: 601px){
 #Scroller1 section{
     grid-area: scroll1;
 }
@@ -40,6 +51,7 @@ img{
 }
 #Scroller4 section{
   grid-area: scroll4;
+}
 }
 header{
     position: relative;
@@ -108,4 +120,21 @@ header{
   .Scroller4:hover .marquee2{
     
     animation-play-state: paused;
+  }
+
+
+  @media (max-width: 600px) {
+body{
+  height: 100vh;
+  background: linear-gradient(to bottom, #66E5BF,  #A675F5);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+  "header header"
+  "scroll1 scroll3"
+  "scroll2 scroll4";
+}
+#duplicate{
+  display: none;
+}
   }
