@@ -26,6 +26,13 @@ body {
   scrollbar-width: none;
 }
 
+svg {
+  height: 1em;
+  width: 1em;
+  display: inline;
+  vertical-align: bottom;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -49,11 +56,16 @@ h2 {
   font-size: 8vw;
 }
 
-.subheader {
-  display: block;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.alt-subheader {
+.small-subheader {
+  display: inline-block;
+}
+
+.large-subheader {
   display: none;
 }
 
@@ -113,7 +125,15 @@ img {
   padding: .5em;
   justify-items: center;
   overflow-x: scroll;
+}
 
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-svg {
+  align-self: flex-end;
 }
 
 
@@ -196,12 +216,12 @@ section::-webkit-scrollbar {
     display: none;
   }
 
-  .subheader {
+  .small-subheader {
     display: none;
   }
 
-  .alt-subheader {
-    display: block;
+  .large-subheader {
+    display: flex;
   }
 
   .filler1, .filler2, .filler3 {
