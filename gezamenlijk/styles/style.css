@@ -56,6 +56,10 @@ h2 {
   font-size: 8vw;
 }
 
+h2:hover {
+  text-decoration: underline;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -114,8 +118,13 @@ img {
   padding: .5em;
   justify-items: center;
   overflow-x: scroll;
-}
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  }
 
+.grid-container::-webkit-scrollbar {
+display: none;
+}
 .header-flex {
   display: flex;
   align-items: center;
@@ -132,7 +141,9 @@ section::-webkit-scrollbar {
   display: none;
 }
 
-.filler1, .filler2, .filler3 {
+.filler1,
+.filler2,
+.filler3 {
   display: none;
 }
 
@@ -142,7 +153,8 @@ section::-webkit-scrollbar {
   }
 
   h2 {
-    font-size: max(36px, 3vw);;
+    font-size: max(36px, 3vw);
+    ;
     max-width: 100%;
   }
 
@@ -216,7 +228,9 @@ section::-webkit-scrollbar {
     display: flex;
   }
 
-  .filler1, .filler2, .filler3 {
+  .filler1,
+  .filler2,
+  .filler3 {
     display: block;
   }
 
