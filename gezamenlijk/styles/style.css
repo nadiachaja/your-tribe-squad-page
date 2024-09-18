@@ -75,17 +75,6 @@ p {
   max-width: 80vw;
 }
 
-/* 
-img {
-  min-height: 10vw;
-  height: 12vw;
-  min-width: 120px;
-  width: 12vw;
-  max-width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-} */
-
 /* MAIN CONTAINERS */
 .text-container {
   display: flex;
@@ -158,6 +147,8 @@ section::-webkit-scrollbar {
   }
 
   p {
+    font-size: 16px;
+    color: var(--secondary-color);
     max-width: 24em;
   }
 
@@ -206,6 +197,7 @@ section::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    gap: 2rem;
   }
 
   figure {
