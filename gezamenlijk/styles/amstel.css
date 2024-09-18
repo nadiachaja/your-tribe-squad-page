@@ -52,6 +52,7 @@ section {
 img {
     width: 300px;
     margin-bottom: 25px;
+    border-radius: 20px;
 }
 
 
@@ -113,7 +114,10 @@ td {
     background-color: rgb(208, 206, 206);
 }
 
-table:hover {background-color:rgba(166, 117, 245, 1);}
+
+table:hover {
+background-color:rgba(166, 117, 245, 1);
+}
 
 /*tabel th en td samenvoegen*/
 /* tr:has(:hover) th,
@@ -124,6 +128,23 @@ tr:has(:hover) td {
 tr:has(:hover) :is(th, td) {
     background-color:rgba(166, 117, 245, 1);
 }
+
+/*Rondingen toevoegen*/
+table tr:first-child th:first-child{
+    border-top-left-radius: 20px;
+  }
+  table tr:first-child th:last-child{
+    border-top-right-radius: 20px;
+  }
+  table tr:last-child th:first-child{
+    border-bottom-left-radius: 20px;
+  }
+  table tr:last-child td:last-child{
+    border-bottom-right-radius: 20px;
+  }
+  table{
+    border-radius: 20px;
+  }
 
 
 
