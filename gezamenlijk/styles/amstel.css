@@ -1,129 +1,129 @@
 body {
-  background: linear-gradient(90deg, rgba(5, 5, 66, 1) 0%, rgba(166, 117, 245, 1) 100%);
+    background: linear-gradient(90deg, rgba(5, 5, 66, 1) 0%, rgba(166, 117, 245, 1) 100%);
 }
 
 main {
-  width: 100vw;
-  margin: auto;
-  align-items: center;
+    width: 100vw;
+    margin: auto;
+    align-items: center;
 
 }
 
 /*midden van pagina */
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;
-  margin: auto;
-  align-items: center;
-  font-family: "Madimi One", sans-serif;
-  font-size: 32px;
-  gap: .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    margin: auto;
+    align-items: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 32px;
+    gap: .5em;
 
 }
 
 /*pijl terug naar homepagina*/
 svg {
-  width: 50px;
-  vertical-align: bottom;
-  fill: #ffffff;
+    width: 50px;
+    vertical-align: bottom;
+    fill: #ffffff;
 }
 
 /*als cursor overheen gaat andere kleur pijl*/
 svg:hover {
-  fill: rgba(166, 117, 245, 1);
+    fill: rgba(166, 117, 245, 1);
 }
 
 /*midden van pagina, tekst en witte vlak*/
 .middle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*midden van pagina h3 en plaatjes*/
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {
-  width: 300px;
-  margin-bottom: 25px;
+    width: 300px;
+    margin-bottom: 25px;
 }
 
 
 h1 {
-  font-family: "Madimi One", sans-serif;
-  font-size: 32px;
-  color: rgb(255, 255, 255);
+    font-family: "Madimi One", sans-serif;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
 }
 
 
 h2 {
-  font-family: "Madimi One", sans-serif;
-  font-size: 24px;
-  color: rgb(254, 254, 254);
+    font-family: "Madimi One", sans-serif;
+    font-size: 24px;
+    color: rgb(254, 254, 254);
 }
 
 
 h3 {
-  font-family: "Madimi One", sans-serif;
-  font-size: 18px;
+    font-family: "Madimi One", sans-serif;
+    font-size: 18px;
 
 }
 
 
 h4 {
-  font-family: "Madimi One", sans-serif;
-  font-size: 15, 5px;
+    font-family: "Madimi One", sans-serif;
+    font-size: 15, 5px;
 }
 
 
 p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 15px;
-  max-width: 40em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    max-width: 40em;
 }
 
 /*tekst van alle inleidingen van de onderwerpen*/
 .inleiding {
-  color: rgb(211, 211, 211);
-  margin-bottom: 2em;
-  padding: 1em;
+    color: rgb(211, 211, 211);
+    margin-bottom: 2em;
+    padding: 1em;
 }
 
 
 
 /*kleur van tabel th -> dagen en td -> tijden*/
 th {
-  background-color: rgb(193, 193, 193);
+    background-color: rgb(193, 193, 193);
 
 }
 
 td {
-  background-color: rgb(208, 206, 206);
+    background-color: rgb(208, 206, 206);
 }
 
 
 /*plaatje en tabel naast elkaar*/
 .info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
 
 
 }
 
 /*het witte vlak waar de tekst, plaatje en tabel in staan*/
 section {
-  background-color: rgb(251, 251, 251);
-  border-radius: 20px;
-  margin-bottom: 2em;
-  padding: 1em;
+    background-color: rgb(251, 251, 251);
+    border-radius: 20px;
+    margin-bottom: 2em;
+    padding: 1em;
 
 }
