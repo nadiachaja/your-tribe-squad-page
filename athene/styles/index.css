@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    display: flex;
+}
+body{
+    display:grid;
+    color: white;
+    background: linear-gradient(to right,#050542,  #A675F5);
+    padding: 1em;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "header scroll1"
+    "header scroll2"
+    "header scroll3"
+    "header scroll4";
+
+}
+
+/*Zorg ervoor dat de marquees niet voor de header gaan op een smal scherm*/
+section{
+    overflow:hidden;
+    flex-direction: row;
+}
+
+img{
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+}
+/*Positionering van de scrollers*/
+#Scroller1 section{
+    grid-area: scroll1;
+}
+#Scroller2 section{
+    grid-area: scroll2;
+}
+#Scroller3 section{
+  grid-area: scroll3;
+}
+#Scroller4 section{
+  grid-area: scroll4;
+}
+header{
+    position: relative;
+    grid-area: header;
+    text-align: center;
+
+}
+
+  /*Scroller linksaf*/
+.marquee {
+    height: 100%;
+    flex-direction: row;
+    white-space: nowrap;
+    border: 1px solid #333;
+    animation: scroll1 30s linear infinite;
+    position:relative;
+  }
+
+  @keyframes scroll1 {
+    0% {
+      transform: translateX(00%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+ 
+  /*Scroller rechtsaf*/
+  .marquee2 {
+    
+    height: 100%;
+    flex-direction: row;
+    white-space: nowrap;
+    /*Tijdelijke border; haal hem later weg*/
+    border: 1px solid red;
+    animation: scroll2 30s linear infinite;
+    position:relative;
+    
+  }
+  @keyframes scroll2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  /*Pauseer bij Hover*/
+  
+  .Scroller1:hover .marquee{
+    
+    animation-play-state: paused;
+  }
+  
+  .Scroller2:hover .marquee2{
+    
+    animation-play-state: paused;
+  }
+  
+  .Scroller3:hover .marquee{
+    
+    animation-play-state: paused;
+  }
+  
+  .Scroller4:hover .marquee2{
+    
+    animation-play-state: paused;
+  }
