@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Gill Sans";
+    src: url("../assets/GillSans/Gill\ Sans.otf") format("opentype")
+}
+
 body {
     background: linear-gradient(90deg, rgba(5, 5, 66, 1) 0%, rgba(166, 117, 245, 1) 100%);
     margin: 0px;
@@ -7,7 +12,6 @@ main {
     width: 100vw;
     margin: auto;
     align-items: center;
-
 }
 
 /*midden van pagina */
@@ -48,7 +52,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 img {
@@ -57,10 +60,9 @@ img {
     border-radius: 20px;
 }
 
-.plaatje{
+.plaatje {
     width: 250px;
 }
-
 
 h1 {
     font-family: "Madimi One", sans-serif;
@@ -89,10 +91,9 @@ h4 {
 
 
 p {
-    font-family: Gill Sans, sans-serif; 
+    font-family: "Gill Sans", sans-serif;
     font-size: 15px;
     max-width: 40em;
-
 }
 
 /*tekst van alle inleidingen van de onderwerpen*/
@@ -102,29 +103,28 @@ p {
     padding: 1em;
 }
 
-
+/* TABLES */
 th,
 td {
     text-align: center;
     padding-left: .5em;
     padding-right: .5em;
+    font-family: "Gill Sans", sans-serif;
 }
 
 
 /*kleur van tabel th -> dagen en td -> tijden*/
 th {
     background-color: rgb(193, 193, 193);
-/* font-family: "Gowun Batang", serif;
-font-size: 15px; */
-font-family: Gill Sans, sans-serif; 
-font-weight: normal;
+    /* font-family: "Gowun Batang", serif;
+    font-size: 15px; */
+    font-weight: normal;
 }
 
 td {
     background-color: rgb(208, 206, 206);
     /* font-family: "Gowun Batang", serif;
-font-size: 15px; */
-font-family: Gill Sans, sans-serif; 
+    font-size: 15px; */
 }
 
 
@@ -160,9 +160,9 @@ table tr:last-child td:last-child {
     border-bottom-right-radius: 20px;
 }
 
-table tr:last-child td:first-child{
+table tr:last-child td:first-child {
     border-bottom-left-radius: 20px;
-  }
+}
 
 table {
     border-radius: 20px;
@@ -180,7 +180,7 @@ table {
 }
 
 /*plaatje en tekst naast elkaar*/
-.koffie{
+.koffie {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -189,7 +189,7 @@ table {
     align-items: center;
 }
 
-.descripton{
+.descripton {
     max-width: 22em;
 }
 
@@ -201,7 +201,9 @@ section {
     padding: 1em;
 }
 
-footer{
+/* FOOTER */
+
+footer {
     background-color: rgb(125, 90, 158);
     display: flex;
     flex-direction: row;
@@ -212,8 +214,9 @@ footer{
 
 }
 
-.onder{
+.onder {
     color: rgb(255, 255, 255);
     font-family: "Madimi One", sans-serif;
-    font-size:18px;
+    font-size: 18px;
+    text-decoration: none;
 }
