@@ -52,7 +52,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 img {
@@ -64,7 +63,6 @@ img {
 .plaatje {
     width: 250px;
 }
-
 
 h1 {
     font-family: "Madimi One", sans-serif;
@@ -96,7 +94,6 @@ p {
     font-family: "Gill Sans", sans-serif;
     font-size: 15px;
     max-width: 40em;
-
 }
 
 /*tekst van alle inleidingen van de onderwerpen*/
@@ -106,7 +103,7 @@ p {
     padding: 1em;
 }
 
-
+/* TABLES */
 th,
 td {
     text-align: center;
@@ -204,6 +201,8 @@ section {
     padding: 1em;
 }
 
+/* FOOTER */
+
 footer {
     background-color: rgb(125, 90, 158);
     display: flex;
@@ -219,4 +218,5 @@ footer {
     color: rgb(255, 255, 255);
     font-family: "Madimi One", sans-serif;
     font-size: 18px;
+    text-decoration: none;
 }
