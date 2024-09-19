@@ -202,16 +202,18 @@ section {
 }
 
 footer{
-    background-color: blueviolet;
+    background-color: rgb(125, 90, 158);
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 6em;
+    gap: 5em;
     align-items: center;
 
 }
 
 .onder{
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: "Madimi One", sans-serif;
+    font-size:18px;
 }
