@@ -193,6 +193,7 @@ table {
     max-width: 22em;
 }
 
+
 /*het witte vlak waar de tekst, plaatje en tabel in staan*/
 section {
     background-color: rgb(251, 251, 251);
@@ -200,6 +201,7 @@ section {
     margin-bottom: 2em;
     padding: 1em;
 }
+
 
 /* FOOTER */
 
@@ -213,7 +215,6 @@ footer {
     align-items: center;
     margin-top: 3em;
     margin-bottom: 2em;
-
 }
 
 .onder {
@@ -223,9 +224,33 @@ footer {
     font-size: 18px;
     text-decoration: none;
     transition-duration: .3s;
-
 }
 
 .onder:hover{
 color: rgba(166, 117, 245, 1) ;
 }
+
+
+
+@media screen and (min-width: 400px){
+section{
+margin-left: 2em;
+margin-right: 2em;
+}
+
+h2{
+text-align: center;
+}
+}
+
+
+@media screen and (min-width: 200px){
+    section{
+    margin-left: 2em;
+    margin-right: 2em;
+    }
+    
+    h2{
+    text-align: center;
+    }
+    }
