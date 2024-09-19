@@ -108,12 +108,24 @@ p {
 }
 
 img {
+  position: relative;
   border: 2px solid white;
   box-shadow: 0px 2px 2px black;
   height: 20vh;
   width: 20vh;
   border-radius: 20px;
   object-fit: cover;
+  transition: ease-in 0.2s;
+	transform:
+		perspective(15em)
+		translateZ(0em);
+}
+
+img:hover {
+  filter: brightness(120%);
+  transform:
+    perspective(15em)
+    translateZ(1em);
 }
 
 .grid-container {
