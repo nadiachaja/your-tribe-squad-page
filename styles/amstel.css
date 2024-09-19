@@ -204,19 +204,28 @@ section {
 /* FOOTER */
 
 footer {
-    background-color: rgb(125, 90, 158);
+    background-color: linear-gradient(90deg, rgba(5, 5, 66, 1) 0%, rgba(166, 117, 245, 1) 100%);
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5em;
+    gap: 4em;
     align-items: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
 
 }
 
 .onder {
     color: rgb(255, 255, 255);
+    margin: 1em;
     font-family: "Madimi One", sans-serif;
     font-size: 18px;
     text-decoration: none;
+    transition-duration: .3s;
+
+}
+
+.onder:hover{
+color: rgba(166, 117, 245, 1) ;
 }
