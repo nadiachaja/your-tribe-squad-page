@@ -1,12 +1,17 @@
+@font-face {
+    font-family: "Gill Sans";
+    src: url("../assets/GillSans/Gill\ Sans.otf") format("opentype")
+}
+
 body {
     background: linear-gradient(90deg, rgba(5, 5, 66, 1) 0%, rgba(166, 117, 245, 1) 100%);
+    margin: 0px;
 }
 
 main {
     width: 100vw;
     margin: auto;
     align-items: center;
-
 }
 
 /*midden van pagina */
@@ -20,8 +25,8 @@ header {
     font-family: "Madimi One", sans-serif;
     font-size: 32px;
     gap: .5em;
-
 }
+
 
 /*pijl terug naar homepagina*/
 svg {
@@ -55,6 +60,9 @@ img {
     border-radius: 20px;
 }
 
+.plaatje {
+    width: 250px;
+}
 
 h1 {
     font-family: "Madimi One", sans-serif;
@@ -73,7 +81,6 @@ h2 {
 h3 {
     font-family: "Madimi One", sans-serif;
     font-size: 18px;
-
 }
 
 
@@ -84,39 +91,45 @@ h4 {
 
 
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Gill Sans", sans-serif;
     font-size: 15px;
     max-width: 40em;
 }
 
 /*tekst van alle inleidingen van de onderwerpen*/
 .inleiding {
-    color: rgb(211, 211, 211);
+    color: rgb(255, 255, 255);
     margin-bottom: 2em;
     padding: 1em;
 }
 
-
-th,td {
+/* TABLES */
+th,
+td {
     text-align: center;
     padding-left: .5em;
     padding-right: .5em;
+    font-family: "Gill Sans", sans-serif;
 }
 
 
 /*kleur van tabel th -> dagen en td -> tijden*/
 th {
     background-color: rgb(193, 193, 193);
-
+    /* font-family: "Gowun Batang", serif;
+    font-size: 15px; */
+    font-weight: normal;
 }
 
 td {
     background-color: rgb(208, 206, 206);
+    /* font-family: "Gowun Batang", serif;
+    font-size: 15px; */
 }
 
 
 table:hover {
-background-color:rgba(166, 117, 245, 1);
+    background-color: rgba(166, 117, 245, 1);
 }
 
 /*tabel th en td samenvoegen*/
@@ -126,26 +139,34 @@ tr:has(:hover) td {
 } */
 
 tr:has(:hover) :is(th, td) {
-    background-color:rgba(166, 117, 245, 1);
+    background-color: rgba(166, 117, 245, 1);
 }
 
-/*Rondingen toevoegen*/
-table tr:first-child th:first-child{
-    border-top-left-radius: 20px;
-  }
-  table tr:first-child th:last-child{
-    border-top-right-radius: 20px;
-  }
-  table tr:last-child th:first-child{
-    border-bottom-left-radius: 20px;
-  }
-  table tr:last-child td:last-child{
-    border-bottom-right-radius: 20px;
-  }
-  table{
-    border-radius: 20px;
-  }
 
+/*Rondingen toevoegen tabel*/
+table tr:first-child th:first-child {
+    border-top-left-radius: 20px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 20px;
+}
+
+table tr:last-child th:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+table {
+    border-radius: 20px;
+}
 
 
 /*plaatje en tabel naast elkaar*/
@@ -155,8 +176,21 @@ table tr:first-child th:first-child{
     justify-content: center;
     flex-wrap: wrap;
     gap: 1em;
+    align-items: center;
+}
 
+/*plaatje en tekst naast elkaar*/
+.koffie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    align-items: center;
+}
 
+.descripton {
+    max-width: 22em;
 }
 
 
@@ -166,4 +200,45 @@ section {
     border-radius: 20px;
     margin-bottom: 2em;
     padding: 1em;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: linear-gradient(90deg, rgba(5, 5, 66, 1) 0%, rgba(166, 117, 245, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.onder {
+    color: rgb(255, 255, 255);
+    margin: 1em;
+    font-family: "Madimi One", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+.onder:hover{
+color: rgba(166, 117, 245, 1) ;
+}
+
+
+
+@media screen and (min-width: 300px){
+section{
+margin-left: 2em;
+margin-right: 2em;
+}
+
+h2{
+text-align: center;
+}
 }
