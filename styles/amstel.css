@@ -232,7 +232,7 @@ color: rgba(166, 117, 245, 1) ;
 
 
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 300px){
 section{
 margin-left: 2em;
 margin-right: 2em;
@@ -242,15 +242,3 @@ h2{
 text-align: center;
 }
 }
-
-
-@media screen and (min-width: 200px){
-    section{
-    margin-left: 2em;
-    margin-right: 2em;
-    }
-    
-    h2{
-    text-align: center;
-    }
-    }
